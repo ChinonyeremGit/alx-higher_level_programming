@@ -9,4 +9,3 @@ def search_replace(my_list, search, replace):
             new_list.append(my_list[i])
         i += 1
     return new_list
-
