@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 '''
 Module 1-square
-Defines a square with private instance attribute, size and public instance method, area.
+Defines a square with private initance attribute, size and
+public instance method, area.
 '''
 
 
