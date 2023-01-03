@@ -94,4 +94,3 @@ class Square:
                              "#" * self.__size
                              for rows in range(self.__size)]), end="")
             return ""
-            
