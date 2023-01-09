@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-''' Module 5-base_geometry '''
+'''
+Module 5-base_geometry
+contains class base geometry and rectangle
+'''
 
 
 class BaseGeometry:
@@ -26,3 +29,21 @@ class BaseGeometry:
             raise TypeError("{:s} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{:s} must be greater than 0".format(name))
+
+class Rectangle(BaseGeometry):
+    '''
+    inherits from a class
+    Args:
+        width: width of rectangle
+        height: height of reactangle
+    Functions:
+        __init__(self, width, height)
+    '''
+
+    def __init__(self, width, height):
+        ''' initializer '''
+
+        super().integer_validator("width", width)
+        self.__width = width
+        super().integer_validator("height", height)
+        self.__height = height
